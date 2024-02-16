@@ -8,6 +8,8 @@ public class InsertionSort {
         InsertionSort insertionSortObject = new InsertionSort();
         int[] sortedArray = insertionSortObject.insertionSort(a);
         insertionSortObject.printArray(sortedArray);
+        int[] reverseSortedArray = insertionSortObject.reverseSortedArray(a);
+        insertionSortObject.printArray(reverseSortedArray);
 
     }
 
@@ -27,5 +29,18 @@ public class InsertionSort {
 
     void printArray(int[] a){
         System.out.println("Sorted Array [] --> "+Arrays.toString(a));
+    }
+
+    int [] reverseSortedArray(int[] a){
+        int n = a.length;
+        int[] b = new int[n];
+        int j = n;
+
+        for(int i =0; i<n; i++){
+            b[j-1] = a[i];
+            j = j - 1;
+        }
+
+        return b;
     }
 }
