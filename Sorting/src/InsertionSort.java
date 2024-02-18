@@ -8,6 +8,8 @@ public class InsertionSort {
         InsertionSort insertionSortObject = new InsertionSort();
         int[] sortedArray = insertionSortObject.insertionSort(a);
         insertionSortObject.printArray(sortedArray);
+
+        // Sorted arrays in descending order
         int[] reverseSortedArray = insertionSortObject.reverseSortedArray(a);
         insertionSortObject.printArray(reverseSortedArray);
 

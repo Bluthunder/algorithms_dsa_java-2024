@@ -7,7 +7,6 @@ public class MergeSort {
         int[] a = {3, 41, 52, 26, 38, 57, 9};
 
         System.out.println("Hello World \n" + "Merge Sort");
-        System.out.println(" array length: " + a.length);
         MergeSort mergeSort = new MergeSort();
         mergeSort.mergeSort(a,0,a.length -1);
         mergeSort.printArray(a);
@@ -79,8 +78,7 @@ public class MergeSort {
         }
     }
 
-    public void printArray(int[] a){
-        System.out.println(Arrays.toString(a));
+    void printArray(int[] a){
+        System.out.println("Sorted Array [] --> "+Arrays.toString(a));
     }
-    
 }
