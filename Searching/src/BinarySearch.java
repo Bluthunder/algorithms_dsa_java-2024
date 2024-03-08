@@ -1,3 +1,7 @@
+/**
+ * This Binary Search solution classes implements both recursive and iterative way
+ */
+
 import java.util.Scanner;
 
 public class BinarySearch {
